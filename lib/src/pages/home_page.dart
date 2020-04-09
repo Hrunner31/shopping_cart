@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:shopping_car/src/widgets/app_bar_widget.dart';
 
-import 'package:shopping_car/src/widgets/fondo_pantalla_widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import 'package:shopping_car/src/widgets/app_bar.dart';
+import 'package:shopping_car/src/widgets/cards_view.dart';
+import 'package:shopping_car/src/widgets/fondo_pantalla.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -19,7 +21,8 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   CustomAppBar(),
-                  _Header()
+                  _Header(),
+                  CardsView()
                 ],
               ),
             ),
