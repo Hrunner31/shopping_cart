@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 
+import 'package:shopping_car/src/widgets/fondo_pantalla_widgets.dart';
+
 class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Hola Mundo'),
-      ),
+      body: Stack(
+        children: <Widget>[
+          FondoCircular()
+        ],
+      )
     );
   }
+
+  
 }
