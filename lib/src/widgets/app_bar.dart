@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget {
           color: Colors.transparent,
           child: Row(
             children: <Widget>[
-              IconButton(icon: Icon(FontAwesomeIcons.arrowAltCircleLeft), onPressed: () {}),
+              IconButton(icon: Icon(FontAwesomeIcons.arrowLeft), onPressed: () {}),
               Spacer(),
               IconButton(icon: Icon(FontAwesomeIcons.search), onPressed: () {}),
               Stack(

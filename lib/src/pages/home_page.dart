@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
             child: SingleChildScrollView(
               padding: EdgeInsets.all(5.0),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   CustomAppBar(),
@@ -38,7 +39,7 @@ class _Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15.0),
+      padding: EdgeInsets.symmetric(horizontal: 25.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -68,12 +69,12 @@ class BuyButtom extends StatelessWidget {
             child: Row(
               
               children: <Widget>[
-                Text('Buy', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40.0)),
-                Spacer(),
+                Text('Buy', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20.0)),
+                SizedBox(width: 5.0),
                 Icon(FontAwesomeIcons.arrowRight, color: Colors.white)
               ],
             ),
-            width: size.width * 0.5,
+            width: size.width * 0.3,
             height: 75.0,
             decoration: BoxDecoration(
               color: Colors.red,
