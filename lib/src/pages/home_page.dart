@@ -13,9 +13,12 @@ class HomePage extends StatelessWidget {
           FondoCircular(),
           SafeArea(
             child: SingleChildScrollView(
+              padding: EdgeInsets.all(5.0),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  CustomAppBar()
+                  CustomAppBar(),
+                  _Header()
                 ],
               ),
             ),
@@ -25,3 +28,20 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+class _Header extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 15.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          SizedBox(height: 45.0),
+          Text('Shopping Car', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0)),
+          Text('By MR76', style: TextStyle(fontWeight: FontWeight.w100, fontSize: 18.0))
+        ],
+      ),
+    );
+  }
+} 
